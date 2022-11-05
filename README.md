@@ -1,4 +1,4 @@
-#LR6
+# LR6
 ___
 Лабораторная работа №6
 
@@ -27,10 +27,13 @@ ___
 
 Перейдем в ветку branch1 командой git checkout branch1.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/10.jpg)
+
 Посмотрим коммиты ветки branch1 с помощью команды git log.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/11.jpg)
+
 Рассмотрим последние 3 коммита и внесенную ими разницу на уровне строк с помощью команды  git log -p -3.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/12.1.jpg)
+
 Вернемся в ветку master.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/13.jpg)
 
@@ -44,27 +47,30 @@ ___
 Удаляем побочную ветку после успешного слияния при помощи команды git branch -d branch1.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/17.jpg)
 #### 9. Фиксирование изменений
-Создадим изменения и комментарии для них. Создавать будем текстовые файлы прямо в терминале. Для создания текстовика используем команду echo ТЕкст для первого изменения > change1.txt, зафиксируем его git add change1.txt. Оставим комментарий git commit -m "изменене 1". Повторим все то же самое еще раз, только название указываем другое - change2.txt. 
+Создадим изменения и комментарии для них. Создавать будем текстовые файлы прямо в терминале. Для создания текстовика используем команду echo Текст для первого изменения > change1.txt, зафиксируем его git add change1.txt. Оставим комментарий git commit -m "изменене 1". Повторим все то же самое еще раз, только название указываем другое - change2.txt. 
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/19.jpg)
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/20.jpg)
+
 Посмотрим комментарии.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/21.jpg)
 #### 10. Откат коммита
 Делаем откат коммита. Вводим git reset --HEAD~1.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/22.1.jpg)
 #### 11. Создание ветки
-Создаем ветку report для отчета и перейдем в нее, вводя команду git branch.
+Создаем ветку для отчета и перейдем в нее, вводя команду git branch.
 ![](https://raw.githubusercontent.com/sushanura/LR6/master/screenshots/23.jpg)
 #### 12. Отчет
 Оформляю отчёт в VS Code с расширением Markdown Preview Enhanced файла README.md.
 
-###Логи команд:
+### Логи команд:
 * git config --global user.name "В1441 SushkovaAS"
 * git config --global user.email "nurasush2003@yandex.ru"
 * git config --list
 * git clone 
 * cd LR6
+
 _/Добавление файл addFile через интерфейс GitHub/_
+
 * git pull
 * git log
 * git log -p -3
@@ -85,12 +91,14 @@ _/Добавление файл addFile через интерфейс GitHub/_
 * git add change1.txt
 * git status
 * git commit -m "изменение 1"
+
 _/изменение в файле change1.txt/_
 
 * echo Текст для второго изменения > change2.txt
 * git add change2.txt
 * git status
 * git commit -m "изменение 2"
+
 _/изменение в файле change2.txt/_
 
 * git log -3
@@ -101,4 +109,4 @@ _/изменение в файле change2.txt/_
 * git pull
 
 Вывод:
-Я изучил базовые возможности системы управления версиями, опыт работы с Git Api, опыт работы с локальным и удаленным репозиторием.
+Я изучила базовые возможности системы управления версиями, опыт работы с Git Api, опыт работы с локальным и удаленным репозиторием.
